@@ -51,12 +51,12 @@ output "requester_options" {
   value       = aws_vpc_peering_connection_accepter.peer_accepter.requester
 }
 
-output "requester_routes" {
-  description = "Routes from the requester VPC"
-  value       = tolist(aws_route.this_routes.*)
-}
+# output "requester_routes" {
+#   description = "Routes from the requester VPC"
+#   value       = tolist(aws_route.this_routes.*)
+# }
 
-output "accepter_routes" {
-  description = "Routes to the accepter VPC"
-  value       = tolist(aws_route.peer_routes.*)
-}
+# output "accepter_routes" {
+#   description = "Routes to the accepter VPC"
+#   value       = tolist(aws_route.peer_routes.*)
+# }
